@@ -1,4 +1,54 @@
-<!DOCTYPE html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.flashcard-container {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; //se liga na ilusion do pai
+    margin: 20px;
+}
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flashcard-container:hover .flashcard-inner {
+    transform: rotateY(180deg);
+}
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); //jutsu das sombras
+    padding: 20px;
+    box-sizing: border-box;
+}
+.flashcard-front {
+    background-color: #ffffff;
+    color: #333333;
+}
+.flashcard-back {
+    background-color: #6c5ce7; 
+    color: white;
+    transform: rotateY(180deg);
+}<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
