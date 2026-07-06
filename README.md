@@ -12,12 +12,12 @@
             
             <div class="flashcard-front">
                 <h2>Conceito</h2>
-                <p>Passe o mouse para ver a resposta!</p>
+                <p>Passe o mouse</p>
             </div>
             
             <div class="flashcard-back">
                 <h2>Explicação</h2>
-                <p>Aqui você coloca a sua informação detalhada. Você está no controle do conteúdo!</p>
+                <p>conteúdo</p>
             </div>
             
         </div>
